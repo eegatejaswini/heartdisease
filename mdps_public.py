@@ -2,7 +2,7 @@
 
 import pickle
 import streamlit as st
-from streamlit_option_menu import option_menu
+#from streamlit_option_menu import option_menu
 
 
 # loading the saved models
@@ -18,7 +18,7 @@ heart_disease_model = pickle.load(open('heart_disease_model.sav', 'rb'))
 # sidebar for navigation
 with st.sidebar:
     
-    selected = option_menu('HEART DISEASE PREDICTION SYSTEM',
+    selected = st.sidebar.selectbox('HEART DISEASE PREDICTION SYSTEM',
                           
                           
                           ['Heart Disease Prediction','others'],
