@@ -4,29 +4,17 @@ import pickle
 import streamlit as st
 from streamlit_option_menu import option_menu
 
-
 # loading the saved models
-
-
 
 heart_disease_model = pickle.load(open('heart_disease_model.sav', 'rb'))
 
 
-
-
-
 # sidebar for navigation
+
 with st.sidebar:
-    
-    selected = option_menu('HEART DISEASE PREDICTION SYSTEM',
-                          
-                          
-                          ['Heart Disease Prediction','others'],
-                           
-                          icons='heart',
-                          default_index=0)
-    
-    
+    selected = option_menu("PREDICTION", ["heart disease", 'result'], 
+        icons=['house', 'gear'], menu_icon="cast", default_index=1)
+    selected
 
    
 
