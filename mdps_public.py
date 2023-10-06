@@ -70,7 +70,7 @@ if (selected == 'HEART DISEASE PREDICTION'):
         
 else:
     if (selected == 'result'):
-        st.title('predicted / not predicted)
+        st.title('predicted / not predicted')
      
      
     # code for Prediction
